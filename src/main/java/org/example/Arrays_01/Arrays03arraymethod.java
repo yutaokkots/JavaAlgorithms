@@ -20,17 +20,17 @@ public class Arrays03arraymethod {
         int smallest = Integer.MAX_VALUE;
         int secondSmallest = Integer.MAX_VALUE;
 
-        for (int item: arr){
+        for (int current: arr){
             // if item is smaller than secondSmallest, then it is smallest
-            if (item < secondSmallest && item > smallest){
-                secondSmallest = item;
+            if(current < secondSmallest && current > smallest){
+                secondSmallest = current;
             }
-            else if (item < secondSmallest && item < smallest){
+            else if (current < secondSmallest && current < smallest){
                 secondSmallest = smallest;
-                smallest = item;
+                smallest = current;
             }
-            if (item < smallest) {
-                smallest = item;
+            if (current < smallest) {
+                smallest = current;
             }
         }
         if (secondSmallest == Integer.MAX_VALUE){
