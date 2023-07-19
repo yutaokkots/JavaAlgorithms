@@ -32,4 +32,4 @@ public class Challenge01EvenOrOddTest {
         assertFalse(Challenge01EvenOrOdd.isEven(-75));
     }
 }
-}
+
