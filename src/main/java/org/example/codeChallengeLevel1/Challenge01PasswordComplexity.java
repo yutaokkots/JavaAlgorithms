@@ -16,8 +16,10 @@ public class Challenge01PasswordComplexity {
         boolean isNum = false;
 
         char[] pswd = password.toCharArray();
+
         for (int i = 0; i < pswd.length; i++){
             charLimit ++;
+            // also can use password.charAt[i]
             if (pswd[i] >= 'a' && pswd[i] <= 'z'){
                 isUpper = true;
             }
