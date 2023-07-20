@@ -10,8 +10,25 @@ public class Challenge01PasswordComplexity {
         // must have one uppercase letter // isUpperCase()
         // must have one lowercase letter // isLowerCase()
         // must have one number
+        int charLimit = 0;
+        boolean isUpper = false;
+        boolean isLower = false;
+        boolean isNum = false;
 
-        return false;
+        char[] pswd = password.toCharArray();
+        for (int i = 0; i < pswd.length; i++){
+            charLimit ++;
+            if (pswd[i] >= 'a' && pswd[i] <= 'z'){
+                isUpper = true;
+            }
+            if (pswd[i] >= 'A' && pswd[i] <= 'Z'){
+                isLower = true;
+            }
+            if (pswd[i] >= '0' & pswd[i] <= '9'){
+                isNum = true;
+            }
+        }
+        return charLimit > 6 && isUpper && isLower && isNum;
     }
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);

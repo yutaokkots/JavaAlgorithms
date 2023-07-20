@@ -8,6 +8,7 @@ public class Arrays08ArrayLists<D> {
     private Object elements[];
 
     public Arrays08ArrayLists(){
+
         elements = new Object[DEFAULT_CAPACITY];
     }
 
@@ -27,6 +28,7 @@ public class Arrays08ArrayLists<D> {
     }
 
     public int size(){
+
         return size;
     }
 
