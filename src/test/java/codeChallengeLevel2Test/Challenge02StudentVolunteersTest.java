@@ -12,6 +12,11 @@ public class Challenge02StudentVolunteersTest {
     List<String> studentSet2 = List.of("Sally", "Polly", "Molly", "Tony");
     List<String> studentSet3 = List.of("Molly", "Tony");
 
+    // Map -> refers to hashmap/ dictionary
+    // Map<String, List<string>> variableName <-- creating a hashmap where key is a String, value is list of Str.
+    // = Map.of( "key 1", List.of("value 1", "value 2"), "key 2", List.of("value 3", "value 4", "value 5", "value 6"),
+    //          "key 3", List.of("value 17, "value 8", "value 9"));
+
     Map<String, List<String>> attendeesMapping1 = Map.of("Farmer's Market", List.of("Sally", "Polly"),
             "Car Wash Fundraiser", List.of("Molly", "Tony", "Polly"),
             "Cooking Workshop", List.of("Sally", "Molly", "Polly"),
